@@ -4,7 +4,7 @@ I want to control the server remotely. However, there are security problems. So,
 
 ## Description
 
-This is `mail.cfg` file.
+This is `mail.cfg` file content.
 
 ```
 [Host]
@@ -20,22 +20,22 @@ echo=\[Daily report\] (?P<param>.*)
 echo2=\[WARNING\] (?P<param>.*)
 ```
 
-* Host
- * POP3
-  * Server address of pop3. (ex: outlook.office365.com)
+* **Host**
+  * POP3
+    * Server address of pop3. (ex: outlook.office365.com)
  * SSL
-  * 1 is SSL, 0 is Non-SSL
-* Account
- * User
-  * User account for POP3
- * Password
-  * User password for POP3
-* Rules
- * key
-  * Python module name in `modules` subdirectory.
- * value
-  * A regular expression for subject selecting.
-  * `?P<param>` is input parameter to module.
+   * 1 is SSL, 0 is Non-SSL
+* **Account**
+  * User
+    * User account for POP3
+  * Password
+    * User password for POP3
+* **Rules**
+  * key
+    * Python module name in `modules` subdirectory.
+  * value
+    * A regular expression for subject selecting.
+    * `?P<param>` is input parameter to module.
 
 ### Module Sample
 
@@ -54,7 +54,7 @@ if __name__ == '__main__':
 
 ## Usage
 
-You can run a `main.py` file periodically or you can use crontab.
+You can run a `main.py` file periodically or use crontab.
 
 # License
 
