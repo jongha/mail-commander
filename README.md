@@ -56,6 +56,6 @@ if __name__ == '__main__':
 
 You can run a `main.py` file periodically or use crontab.
 
-# License
+## License
 
 mail-commander is available under the terms of the MIT License.
